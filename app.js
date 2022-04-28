@@ -1,4 +1,8 @@
 // import functions and grab DOM elements
+const stateDropdown = document.getElementById('state-dropdown');
+const cityDropdown = document.getElementById('city-dropdown');
+const houseDropdown = document.getElementById('house-dropdown');
+
 
 // let state
 
