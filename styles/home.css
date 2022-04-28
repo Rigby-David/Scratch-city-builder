@@ -1,1 +1,5 @@
 /* add home page styles here */
+#head {
+    height: 100px;
+    width: 100px;
+}

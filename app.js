@@ -1,11 +1,10 @@
 // import functions and grab DOM elements
-const TreeDropdown = document.getElementById('state-dropdown');
+const treeDropdown = document.getElementById('tree-dropdown');
 const groundDropdown = document.getElementById('city-dropdown');
 const animalDropdown = document.getElementById('house-dropdown');
 
+const treeDiv = document.getElementById('tree');
 
-
-const treeEl = document.getElementById('tree');
 
 // let state
 let treeCount = 0;
@@ -16,7 +15,7 @@ let animalCount = 0;
 TreeDropdown.addEventListener('change', () => {
 // console.log('showing', stateDropdown.value);
     treeCount++;
-    treeDiv.style.backgroundImage = `url('./assets/${state-dropdown}')`;
+    treeDiv.style.backgroundImage = `url('./assets/${treeDropdown.value}.jpg')`;
 });
 
 groundDropdown.addEventListener('change', () => {
