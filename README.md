@@ -8,6 +8,14 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 
 1) **Make a drawing of your app. Simple "wireframes"** 
 1) **Look at the drawing and name the HTML elements you'll need to realize your vision**
+label - STATE - - WHY - area for drop down select w/ text
+select - STATE - drop down options - WHY - need drop down bar options to display
+option - STATE - different images appear - WHY - need a user selected image to display
+input - STATE - user text input - WHY - user needs area to type slogan
+button - STATE - call for loop array content and display - WHY - user needs button to log slogan
+div/ul - STATE - user text display - WHY - need div/ul element for catchphrase array to display
+event listeners - each dropdown option will need one. slogan button will need one
+console.log to validate features
 1) **Look at the drawing and imagine using the app. What _state_ do you need to track?** 
 1) **For each HTML element ask: Why do I need this? (i.e., "we need div to display the results in")** 
 1) **Once we know _why_ we need each element, think about how to implement the "Why" as a "How" (i.e., `resultsEl.textContent = newResults`)**
