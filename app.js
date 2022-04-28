@@ -1,30 +1,33 @@
 // import functions and grab DOM elements
-const stateDropdown = document.getElementById('state-dropdown');
-const cityDropdown = document.getElementById('city-dropdown');
-const houseDropdown = document.getElementById('house-dropdown');
+const TreeDropdown = document.getElementById('state-dropdown');
+const groundDropdown = document.getElementById('city-dropdown');
+const animalDropdown = document.getElementById('house-dropdown');
 
+
+
+const treeEl = document.getElementById('tree');
 
 // let state
-let stateCount = 0;
-let cityCount = 0;
-let houseCount = 0;
+let treeCount = 0;
+let groundCount = 0;
+let animalCount = 0;
 
 // set event listeners
-stateDropdown.addEventListener('change', () => {
+TreeDropdown.addEventListener('change', () => {
 // console.log('showing', stateDropdown.value);
-stateCount++;
-
+    treeCount++;
+    treeDiv.style.backgroundImage = `url('./assets/${state-dropdown}')`;
 });
 
-cityDropdown.addEventListener('change', () => {
+groundDropdown.addEventListener('change', () => {
 // console.log('showing', cityDropdown.value);
-cityCount++;
+groundCount++;
 
 });
 
-houseDropdown.addEventListener('change', () => {
+animalDropdown.addEventListener('change', () => {
 // console.log('showing', houseDropdown.value);
-houseCount++;
+animalCount++;
 
 });
   // get user input
