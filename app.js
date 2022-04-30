@@ -17,7 +17,11 @@ const animalDiv = document.getElementById('ground');
 // we use let to name a variable
 // if a number data type, let variable = 0;
 // if an array data type, let variable = [];
-let count = 0;
+let treeCount = 0;
+let groundCount = 0;
+let animalCount = 0;
+
+
 
 // set event listeners
 // we use variableName.addEventListener('click/change', () => {})
@@ -26,7 +30,9 @@ let count = 0;
 // if we want an image to pull display on event listener
 // we use variable.style.backgroundImage = `url('./assets/${}.jpg/png')`; to call our image from assets
 treeSelect.addEventListener('change', () => {
-console.log('hi', treeSelect);
+    console.log('hi', treeSelect);
+    treeDiv.style.backgroundImage = `url('./assets/${treeSelect.value}.jpg')`
+    treeCount++;
 });
 
 groundSelect.addEventListener('change', () => {
@@ -40,4 +46,3 @@ console.log('hi', animalSelect);
 });
 // use user input to update state
 // we use template literals `${}`
-``
